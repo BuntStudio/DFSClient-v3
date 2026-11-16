@@ -122,7 +122,7 @@ class HttpClient implements HttpContract
         }
 
         // waiting and processing requests
-        $waitingFinish = Promise\Utils::settle($promises)->wait();
+        $waitingFinish = Promise\settle($promises)->wait();
 
         //creating results array
         foreach ($waitingFinish as $key=>$finished) {

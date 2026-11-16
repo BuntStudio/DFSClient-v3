@@ -3,6 +3,7 @@
 namespace DFSClientV3\Models\SerpApi;
 
 use DFSClientV3\Models\AbstractModel;
+use function GuzzleHttp\Psr7\str;
 
 class GetSerpCompletedTasks extends AbstractModel
 {
