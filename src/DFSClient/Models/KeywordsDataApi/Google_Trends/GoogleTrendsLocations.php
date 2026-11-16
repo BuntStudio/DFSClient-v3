@@ -18,7 +18,7 @@ class GoogleTrendsLocations extends AbstractModel
      * @param string $country
      * @return $this
      */
-    public function setCountry(string $country = null)
+    public function setCountry(?string $country = null)
     {
         $this->requestToFunction = $country ? $this->requestToFunction .'/'.$country : $this->requestToFunction;
         return $this;
